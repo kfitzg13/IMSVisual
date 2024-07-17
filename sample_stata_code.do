@@ -10,7 +10,7 @@ sort id
 encode mstype, gen(mstype_num)
 encode sex, gen(sex_num)
 * Fit a mixed-effects model
-mixed gcipl age i.sex_num ib.mstype_num || id:, reml
+mixed gcipl age i.sex_num ib0.mstype_num || id:, reml
 
 
 
